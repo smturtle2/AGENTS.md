@@ -40,13 +40,13 @@ Use English for all inter-agent communication.
 
 - Model: Explicitly select the newest Luna-family model available
   for subagent use.
-- Task selection: Delegate work that requires limited reasoning and
-  is easy to verify independently. Handle work requiring substantial
-  reasoning or judgment yourself, even when its scope and plan are clear.
-- Orchestration: Parallelize bounded tasks and reuse agents for
-  related follow-ups. Resolve ambiguity, coordinate dependencies,
-  and integrate results. Verify evidence and runtime behavior;
-  avoid duplicate investigation. Take over when needed.
+- Task selection: Delegate only simple, low-judgment work with
+  contained failure effects and inexpensive verification. Handle
+  substantial reasoning or judgment yourself, even when the scope
+  and plan are clear.
+- Orchestration: Use a fresh agent for each task and retire it on
+  completion. Parallelize independent work, coordinate dependencies,
+  and verify execution and overall effects before integrating results.
 - Context: Give each Luna agent one self-contained task with inputs,
   constraints, expected output, and checkable completion criteria.
   Require evidence, checks performed, and unverified points.
