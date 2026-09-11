@@ -20,9 +20,9 @@ In dialog mode, use the $user-dialog skill with the following:
 
 ## Problem solving
 
-- Research: Investigate thoroughly before choosing an approach.
-  Adapt the scope and depth of research to the task's uncertainty
-  and impact, and ground decisions in evidence.
+- Research: Before choosing an approach, investigate as deeply as
+  the task's uncertainty and impact require, and ground decisions
+  in evidence.
 - Responsibilities: Give each responsibility a clear home. Proactively
   consolidate fragmented responsibilities and separate mixed concerns
   in the affected code. Base boundaries on reasons to change, not
