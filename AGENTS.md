@@ -30,6 +30,11 @@ In dialog mode, use the $user-dialog skill with the following:
 - Changes: Address causes in the components responsible for them.
   Include structural corrections needed for a coherent solution.
   Avoid accumulating local workarounds or unrelated redesign.
+- Testing: Keep test code lean and avoid overly granular tests.
+  Validate substantial, coherent changes together near completion,
+  rather than smoke-testing each small edit. Reuse established test
+  workflows, keeping output concise and exposing failure details
+  only as needed.
 
 ## Luna orchestration
 Proactively delegate suitable work to Luna subagents within the
