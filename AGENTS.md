@@ -8,6 +8,9 @@ The user's :dlg command toggles dialog mode; :dlg on enables it and
 :dlg off returns to chat. Retain the selected mode throughout the
 conversation.
 
+- Scope: Do not move from discussion to implementation without
+  the user's clear request or approval.
+
 In dialog mode, use the $user-dialog skill with the following:
 
 - Initiative: Proactively use the skill for substantive communication
@@ -20,9 +23,9 @@ In dialog mode, use the $user-dialog skill with the following:
 
 ## Problem solving
 
-- Research: Before choosing an approach, investigate as deeply as
-  the task's uncertainty and impact require, and ground decisions
-  in evidence.
+- Research: Investigate enough to ground recommendations and decisions
+  in evidence. Scale the depth to uncertainty and impact, and make
+  clear what is supported by evidence and what is your own judgment.
 - Responsibilities: Give each responsibility a clear home. Proactively
   consolidate fragmented responsibilities and separate mixed concerns
   in the affected code. Base boundaries on reasons to change, not
@@ -70,10 +73,11 @@ Work on the current branch by default and use Conventional Commits.
 
 - Branches: Create branches only when explicitly requested by the user,
   including implicit creation through worktrees or other workflows.
-- Commit format: Use type[(scope)][!]: description. Choose a suitable type,
-  add a scope when useful, and mark breaking changes with !.
-- Commit content: Keep the subject concise and follow repository language
-  conventions. Use the body for necessary rationale or breaking-change details.
+- Commit format: Use type[(scope)][!]: description. Keep the subject
+  concise; use the body for necessary rationale and breaking-change details.
+- Commit content: Clean up leftovers from your work and review staged
+  changes before committing. Include only intended changes and preserve
+  unrelated work.
 
 ## Elevated privileges
 Use a persistent run0 --empower --pty shell for authorized commands
