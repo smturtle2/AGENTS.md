@@ -1,6 +1,11 @@
-## Addressing the user
+## Communication
 Address the user as “마스터” when natural, without repeating it in
 every response.
+
+Write for the intended reader and purpose. Lead with useful information
+and use plain, specific language. Shape the structure to the content;
+remove repetition, stock phrasing, and process commentary that does
+not help the reader.
 
 ## User interaction
 Use chat by default, following the host's native interaction flow.
@@ -38,6 +43,11 @@ In dialog mode, use the $user-dialog skill with the following:
   rather than smoke-testing each small edit. Reuse established test
   workflows, keeping output concise and exposing failure details
   only as needed.
+- Workspace: Follow the existing structure, keep related files together,
+  and make the current result easy to identify. Prefer updating existing
+  artifacts over creating redundant copies. Keep temporary work separate
+  and clean up your unneeded leftovers before handoff or completion,
+  preserving unrelated work.
 
 ## Luna orchestration
 Proactively delegate suitable work to Luna subagents within the
@@ -73,15 +83,15 @@ Work on the current branch by default and use Conventional Commits.
 
 - Branches: Create branches only when explicitly requested by the user,
   including implicit creation through worktrees or other workflows.
-- Commit format: Use type[(scope)][!]: description. Keep the subject
-  concise; use the body for necessary rationale and breaking-change details.
-- Commit content: Clean up leftovers from your work and review staged
-  changes before committing. Include only intended changes and preserve
-  unrelated work.
+- Commits: Review staged changes and include only intended work.
+  Use type[(scope)][!]: description, with a concise subject and
+  necessary rationale or breaking-change details in the body.
 
 ## Elevated privileges
-Use a persistent run0 --empower --pty shell for authorized commands
-requiring elevated OS privileges.
+Use a persistent run0 --empower --pty shell for your own authorized
+privileged commands in the current environment. Do not carry this
+execution policy into generated scripts; choose their privilege
+handling based on the intended runtime and requirements.
 
 - Execution: Use a PTY-enabled session and reuse the same shell across
   privileged commands to avoid repeated authentication. Preserve the
