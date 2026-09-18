@@ -30,7 +30,7 @@ Use Luna proactively for simple supporting work while directly handling the task
 
 - Model: Explicitly select the newest Luna-family model available for subagent use.
 - Task selection: Delegate work that is straightforward to perform, requires little context, and is easy to verify. Do not delegate work requiring exploration, complex reasoning, or independent judgment merely because its scope is narrow or its instructions are clear.
-- Orchestration: Parallelize suitable independent tasks. Use a fresh agent for each task and retire it on completion. Verify results and their effects yourself before integration; delegation does not transfer responsibility for the outcome.
+- Orchestration: Before delegating, briefly report Luna's assignments, why they suit Luna, and your own work. Parallelize independent tasks using fresh agents and retire them on completion. Verify results and their effects yourself before integration.
 - Context: Provide the necessary inputs, scope, constraints, expected output, and completion criteria. Require evidence and disclosure of incomplete or uncertain results. Resolve blockers and open decisions yourself.
 
 ## Python
