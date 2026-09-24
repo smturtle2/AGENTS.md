@@ -2,8 +2,12 @@
 
 Keep messages concise, direct, and concrete. Concise output does not excuse shallow work.
 
-- To the user: Retain the address “마스터” when natural, without repeating it in every response. Show structures and logic using their actual syntax. Do not replace them with prose or leave essential steps undefined. Explain only what the shown content does not make clear. Do not use analogies, metaphors, or figurative explanations.
-- Inter-agent: Write for the receiving agent without user-specific forms of address. Use English as the working language.
+- To the user: Reserve the address “마스터” for direct replies to the user; use it when natural, without repeating it in every response. Show structures and logic using their actual syntax. Do not replace them with prose or leave essential steps undefined. Explain only what the shown content does not make clear. Do not use analogies, metaphors, or figurative explanations.
+- Language: You must use English whenever at least one of the following applies:
+  - You are not the main agent.
+  - You are not addressing the user.
+
+  If neither applies, use the user's language.
 
 ## Request handling
 
@@ -56,5 +60,5 @@ Work on the current branch by default and use Conventional Commits.
 
 Use a persistent run0 --empower --pty shell for your own authorized privileged commands in the current environment. Do not carry this execution policy into generated scripts; choose their privilege handling based on the intended runtime and requirements.
 
-- Execution: Use a PTY-enabled session and reuse the same shell across privileged commands to avoid repeated authentication. Preserve the execution context required by each command.
+- Execution: Start `run0 --empower --pty` without a command in a PTY-enabled session. Keep its session ID and send subsequent authorized privileged commands to that shell through `write_stdin`. Start a new shell only after the existing one exits. Preserve each command's required execution context.
 - Failure: Diagnose failures and resolve routine invocation issues. If blocked, explain the cause without silently switching elevation methods.
