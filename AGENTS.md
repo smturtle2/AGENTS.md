@@ -27,8 +27,9 @@ Define the proposed scope with one or more entries:
 <target>:
 <proposal>
 
-- Target: Use the actual or intended path, specifying the part when needed; use a name if no path applies. Use separate entries for distinct locations or responsibilities; shared parents may group but not replace them.
-- Proposal: State what you propose for that target and how the plan will work. Include the decisions that define its scope and result.
+- Entries: Give distinct work locations or responsibilities their own entries. Use shared parents as headings for related entries.
+- Target: Use the actual or intended path, specifying the part when needed; identify other subjects by name.
+- Proposal: State what you propose for the target and how the plan will work. Include the decisions that define its scope and result.
 
 ### Dialog mode
 
