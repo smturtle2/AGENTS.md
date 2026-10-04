@@ -22,12 +22,12 @@ Keep messages concise, direct, and concrete. Include the information needed to u
 
 ### Proposals
 
-Define the proposed scope with one or more entries in this form:
+Define the proposed scope with one or more entries:
 
 <target>:
 <proposal>
 
-- Target: Use the actual or intended path; use a name when no path applies.
+- Target: Use the actual or intended path, specifying the part when needed; use a name if no path applies. Use separate entries for distinct locations or responsibilities; shared parents may group but not replace them.
 - Proposal: State what you propose for that target and how the plan will work. Include the decisions that define its scope and result.
 
 ### Dialog mode
