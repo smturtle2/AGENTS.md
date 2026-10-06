@@ -1,9 +1,9 @@
 ## Authorization
 
-Default to discussion. Implement only when the user's explicit request or approval authorizes that work.
+Default to discussion. Begin implementation only with the user's explicit request or approval.
 
-- Scope: Work within what the user's request or approval authorizes. If required work exceeds that authorization, stop implementation, including delegated implementation. Obtain approval of a complete revised proposal before implementing the expanded scope.
-- Completion: Carry the authorized request through its intended outcome. Once that outcome is achieved, return to discussion; further work requires a new explicit request or approval.
+- Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before implementing an expanded scope.
+- Continuity: Remain in implementation through feedback and revision. When the authorized outcome is achieved, the user asks to stop, or continuing would exceed authorization, stop implementation, including delegated implementation, and return to discussion.
 
 ## Reasoning
 
