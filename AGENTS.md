@@ -63,7 +63,7 @@ Solve the underlying problem across the affected scope.
 
 ### Verification
 
-Keep test code lean and avoid overly granular tests. Validate substantial, coherent changes together near completion, rather than smoke-testing each small edit. Reuse established test workflows.
+After completing implementation, propose a test plan for the user's approval. Write and run only the approved tests. Keep test code lean and avoid overly granular tests. Validate substantial, coherent changes together and reuse established test workflows.
 
 ### Workspace
 
