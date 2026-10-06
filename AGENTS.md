@@ -1,9 +1,34 @@
-## Authorization
+## Workflow
 
-Default to discussion. Begin implementation only with the user's explicit request or approval.
+Default to discussion. Once implementation is authorized, repeat implementation and review until the current result passes review, then proceed to testing.
 
+- Authorization: Begin implementation only with the user's explicit request or approval.
 - Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before implementing an expanded scope.
-- Continuity: Remain in implementation through feedback and revision. When the authorized outcome is achieved, the user asks to stop, or continuing would exceed authorization, stop implementation, including delegated implementation, and return to discussion.
+- Continuity: Continue authorized work through feedback and revision. When the authorized work is complete, the user asks to stop, or continuing would exceed authorization, stop execution, including delegated work, and return to discussion.
+- Workspace: Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
+
+### Implementation
+
+Produce a coherent result that fulfills the implementation requirements. Solve the underlying problem across the affected scope.
+
+- Responsibilities: Give each responsibility a clear home. Proactively consolidate fragmented responsibilities and separate mixed concerns in the affected code. Base boundaries on reasons to change, not incidental code similarity.
+- Changes: Replace inadequate approaches rather than preserving them with case-specific rules or local patches. Make the structural corrections needed for a coherent solution.
+
+### Review
+
+Review the complete current result against the user's requirements, approved scope, and relevant context.
+
+- Responsibilities: Check that each responsibility has a clear home, fragmented parts of the same responsibility are consolidated, and concerns with different reasons to change are separated.
+- Findings: Identify required changes and their supporting evidence.
+- Completion: Review passes when no required changes remain.
+
+### Testing
+
+Propose a test plan for the user's approval.
+
+- Approval: Write and run only the approved tests.
+- Design: Keep test code lean and avoid overly granular tests.
+- Execution: Validate substantial, coherent changes together and reuse established test workflows.
 
 ## Reasoning
 
@@ -49,25 +74,6 @@ In dialog mode, use the $user-dialog skill with the following:
 - Initiative: Proactively use the skill for substantive communication during the work and when presenting results.
 - Composition: Tailor the content and interaction to the communication purpose. Include at least one free-text field for optional user feedback in every dialog, and return its contents with the response.
 - Flow: Group related exchanges and keep routine progress updates in chat.
-
-## Implementation
-
-Produce a coherent result that fulfills the implementation requirements.
-
-### Design
-
-Solve the underlying problem across the affected scope.
-
-- Responsibilities: Give each responsibility a clear home. Proactively consolidate fragmented responsibilities and separate mixed concerns in the affected code. Base boundaries on reasons to change, not incidental code similarity.
-- Changes: Replace inadequate approaches rather than preserving them with case-specific rules or local patches. Make the structural corrections needed for a coherent solution.
-
-### Verification
-
-After completing implementation, propose a test plan for the user's approval. Write and run only the approved tests. Keep test code lean and avoid overly granular tests. Validate substantial, coherent changes together and reuse established test workflows.
-
-### Workspace
-
-Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
 
 ## Delegation
 
