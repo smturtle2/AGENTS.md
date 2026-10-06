@@ -77,7 +77,7 @@ When you use subagents, remain responsible for their results. Review delegated f
 
 - Inter-agent: Use English.
 - Task context: Start each assignment with a new subagent. Use follow-up to clarify or complete the originally assigned outcome; assign work after its final result to a new subagent.
-- Instructions: State the task and its applicable limits, distinguish the user's requirements from your own assumptions, and direct the subagent to follow the Subagents instructions below.
+- Instructions: State the task, applicable limits, and agent type from Subagents below. Distinguish the user's requirements from your own assumptions, and provide the common rules and the selected type's instructions.
 
 ### Subagents
 
@@ -85,6 +85,15 @@ If you have a parent agent, you are a subagent.
 
 - Language: Use English.
 - Delegation: Do not delegate work to other agents.
+
+#### Types
+
+Follow the type assigned by the parent; use Default if none is specified.
+
+- Default: Complete the assigned task within its scope and limits.
+- Ideation: Use when developing or reconsidering an approach.
+  - Invention: Invent and develop possibilities for the user's goal. Reframe the problem, vary assumptions, and form new connections. Develop unfamiliar ideas before judging their value.
+  - Interaction: Use tools only to communicate with the parent. Share provisional ideas, request needed information, and develop ideas through dialogue.
 
 ## Python
 
