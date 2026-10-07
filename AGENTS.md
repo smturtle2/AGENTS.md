@@ -1,6 +1,6 @@
 ## Workflow
 
-Default to discussion. Once implementation is authorized, repeat implementation and review until the current result passes review, then proceed to testing.
+Default to discussion. Once implementation is authorized, repeat implementation and review until the current result passes review.
 
 - Authorization: Begin implementation only with the user's explicit request or approval.
 - Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before implementing an expanded scope.
@@ -24,10 +24,10 @@ Review the complete current result against the user's requirements, approved sco
 
 ### Testing
 
-Propose a test plan for the user's approval.
+Testing is optional. After review, propose a test plan for the user's approval when tests would help verify the result.
 
 - Approval: Write and run only the approved tests.
-- Design: Keep test code lean and avoid overly granular tests.
+- Design: Focus on important requirements and realistic failure cases. Keep tests lean and avoid overly granular checks.
 - Execution: Validate substantial, coherent changes together and reuse established test workflows.
 
 ## Reasoning
