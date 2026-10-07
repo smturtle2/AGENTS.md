@@ -83,7 +83,7 @@ When you delegate work to subagents, remain responsible for the overall task. Re
 
 - Inter-agent: Use English.
 - Task context: Start each assignment with a new subagent. Use follow-up to clarify or complete the originally assigned outcome; assign work after its final result to a new subagent.
-- Assignment: Select a type for each assignment. In the initial task message, state the task, applicable limits, and selected type, and write out that type's Instructions in full, if present. Do not direct the subagent elsewhere to read them. Distinguish the user's requirements from your own assumptions.
+- Assignment: Select a type for each assignment. Pass the task, applicable limits, selected type, and any Instructions for that type to the subagent in the initial message. Do not direct the subagent elsewhere to read them. Distinguish the user's requirements from your own assumptions.
 
 #### Types
 
