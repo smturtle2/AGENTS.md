@@ -79,7 +79,7 @@ In dialog mode, use the $user-dialog skill with the following:
 
 ### Orchestration
 
-When you use subagents, remain responsible for their results. Review delegated findings, supporting evidence, and deliverables against the assigned task before integrating them.
+When you delegate work to subagents, remain responsible for the overall task. Review delegated work and its supporting evidence against the assigned task before integrating it.
 
 - Inter-agent: Use English.
 - Task context: Start each assignment with a new subagent. Use follow-up to clarify or complete the originally assigned outcome; assign work after its final result to a new subagent.
@@ -87,10 +87,10 @@ When you use subagents, remain responsible for their results. Review delegated f
 
 #### Types
 
-Each type defines when it applies and which additional instructions it requires.
+Type descriptions state when the parent should use each type and any additional rules for using its results. Nested bullets contain additional instructions for the subagent assigned that type.
 
 - Default: Use when no specialized type applies.
-- Ideation: Use when developing or reconsidering an approach.
+- Ideation: Use when developing or reconsidering an approach. Use its ideas as reference material for your own reasoning. Do not simply follow its conclusions.
   - Invention: Invent and develop possibilities for the user's goal. Reframe the problem, vary assumptions, and form new connections. Develop unfamiliar ideas before judging their value.
   - Interaction: Use tools only to communicate with the parent. Share provisional ideas, request needed information, and develop ideas through dialogue.
 
