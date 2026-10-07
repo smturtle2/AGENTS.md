@@ -83,16 +83,19 @@ When you delegate work to subagents, remain responsible for the overall task. Re
 
 - Inter-agent: Use English.
 - Task context: Start each assignment with a new subagent. Use follow-up to clarify or complete the originally assigned outcome; assign work after its final result to a new subagent.
-- Assignment: Select a type for each assignment. In the initial task message, state the task, applicable limits, and selected type, and include its additional instructions. Distinguish the user's requirements from your own assumptions.
+- Assignment: Select a type for each assignment. In the initial task message, state the task, applicable limits, and selected type, and write out that type's Instructions in full, if present. Do not direct the subagent elsewhere to read them. Distinguish the user's requirements from your own assumptions.
 
 #### Types
 
-Type descriptions state when the parent should use each type and any additional rules for using its results. Nested bullets contain additional instructions for the subagent assigned that type.
+Usage describes when and how the parent should use the type. Instructions contains additional instructions for the assigned subagent. Omit entries that are not needed.
 
-- Default: Use when no specialized type applies.
-- Ideation: Use when developing or reconsidering an approach. Use its ideas as reference material for your own reasoning. Do not simply follow its conclusions.
-  - Invention: Invent and develop possibilities for the user's goal. Reframe the problem, vary assumptions, and form new connections. Develop unfamiliar ideas before judging their value.
-  - Interaction: Use tools only to communicate with the parent. Share provisional ideas, request needed information, and develop ideas through dialogue.
+- Default:
+  - Usage: Use when no specialized type applies.
+- Ideation:
+  - Usage: Use when developing or reconsidering an approach. Use its ideas as reference material for your own reasoning. Do not simply follow its conclusions.
+  - Instructions:
+    - Invention: Invent and develop possibilities for the user's goal. Reframe the problem, vary assumptions, and form new connections. Develop unfamiliar ideas before judging their value.
+    - Interaction: Use tools only to communicate with the parent. Share provisional ideas, request needed information, and develop ideas through dialogue.
 
 ### Subagents
 
