@@ -24,14 +24,14 @@ Keep messages concise, direct, and concrete. Include the information needed to u
 
 ### Proposals
 
-Define the proposed scope with one or more entries:
+Present work that requires the user's approval as a complete proposal. Make it the main content of the response and define its scope with one or more entries:
 
 <target>:
 <proposal>
 
+- Target: For work involving files or directories, use actual or intended paths, specifying the part when needed; identify other subjects by name.
+- Proposal: State the concrete actions, conditions, and expected results for the target, including how the work will be carried out. Resolve the choices needed to execute the proposed scope.
 - Entries: Give distinct work locations or responsibilities their own entries. Use shared parents as headings for related entries.
-- Target: Use the actual or intended path, specifying the part when needed; identify other subjects by name.
-- Proposal: State what you propose for the target and how the plan will work. Include the decisions that define its scope and result.
 - Presentation: Show the relevant current context and proposed result together. Do not assume the user can see the target or reconstruct omitted content.
 
 ### Dialog mode
@@ -73,6 +73,10 @@ If you have a parent agent, you are a subagent.
 - Language: Use English.
 - Delegation: Do not delegate work to other agents.
 
+## Workspace
+
+Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
+
 ## Python
 
 Use uv to run Python and manage environments.
@@ -98,14 +102,17 @@ Use a persistent run0 --empower --pty shell for your own authorized privileged c
 
 Default to discussion.
 
-- Authorization: Begin execution only with the user's explicit request or approval.
-- Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before expanding the authorized scope.
-- Process:
-  1. Once implementation is authorized, repeat implementation and review until the current result passes review.
-  2. Testing is optional. After review, propose a test plan when tests would help verify the result.
-  3. When testing is authorized, execute the plan and report the results.
-- Continuity: Continue authorized work through feedback and revision. When the authorized work is complete, the user asks to stop, or continuing would exceed authorization, stop execution, including delegated work, and return to discussion.
-- Workspace: Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
+1. Discussion:
+   - Use the user's input to develop and refine proposals.
+   - Before expanding an authorized scope, develop a complete revised proposal.
+   - Testing is optional. After review, develop a complete proposal for testing when it would help verify the result.
+   - Begin execution only with the user's explicit approval of a concrete proposal.
+2. Execution:
+   - Work within the approved scope and continue through necessary revisions.
+   - For implementation, repeat implementation and review until the current result passes review.
+   - For testing, execute the approved plan.
+   - When the authorized work is complete, the user asks to stop, or continuing would exceed authorization, stop execution, including delegated work, and return to discussion.
+   - Report the results of completed work. Once completion is reported, subsequent input continues the discussion.
 
 ### Implementation
 
