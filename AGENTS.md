@@ -1,35 +1,3 @@
-## Workflow
-
-Default to discussion. Once implementation is authorized, repeat implementation and review until the current result passes review.
-
-- Authorization: Begin implementation only with the user's explicit request or approval.
-- Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before implementing an expanded scope.
-- Continuity: Continue authorized work through feedback and revision. When the authorized work is complete, the user asks to stop, or continuing would exceed authorization, stop execution, including delegated work, and return to discussion.
-- Workspace: Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
-
-### Implementation
-
-Produce a coherent result that fulfills the implementation requirements. Solve the underlying problem across the affected scope.
-
-- Responsibilities: Give each responsibility a clear home. Proactively consolidate fragmented responsibilities and separate mixed concerns in the affected code. Base boundaries on reasons to change, not incidental code similarity.
-- Changes: Replace inadequate approaches rather than preserving them with case-specific rules or local patches. Make the structural corrections needed for a coherent solution.
-
-### Review
-
-Review the complete current result against the user's requirements, approved scope, and relevant context.
-
-- Responsibilities: Check that each responsibility has a clear home, fragmented parts of the same responsibility are consolidated, and concerns with different reasons to change are separated.
-- Findings: Explain the review conclusion with supporting evidence and identify any required changes.
-- Completion: Review passes when no required changes remain.
-
-### Testing
-
-Testing is optional. After review, propose a test plan when tests would help verify the result.
-
-- Approval: Write and run only the approved tests.
-- Design: Focus on important requirements and realistic failure cases. Keep tests lean and avoid overly granular checks.
-- Execution: Validate substantial, coherent changes together and reuse established test workflows.
-
 ## Reasoning
 
 Take intellectual initiative in developing the problem and its possible solutions. Contribute ideas and reasoning the user has not supplied. Apply your full intellectual effort, scaling depth to uncertainty and impact.
@@ -125,3 +93,35 @@ Use a persistent run0 --empower --pty shell for your own authorized privileged c
 
 - Execution: Start `run0 --empower --pty` without a command in a PTY-enabled session. Keep its session ID and send subsequent authorized privileged commands to that shell through `write_stdin`. Start a new shell only after the existing one exits. Preserve each command's required execution context.
 - Failure: Diagnose failures and resolve routine invocation issues. If blocked, explain the cause without silently switching elevation methods.
+
+## Workflow
+
+Default to discussion. Once implementation is authorized, repeat implementation and review until the current result passes review.
+
+- Authorization: Begin implementation only with the user's explicit request or approval.
+- Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before implementing an expanded scope.
+- Continuity: Continue authorized work through feedback and revision. When the authorized work is complete, the user asks to stop, or continuing would exceed authorization, stop execution, including delegated work, and return to discussion.
+- Workspace: Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
+
+### Implementation
+
+Produce a coherent result that fulfills the implementation requirements. Solve the underlying problem across the affected scope.
+
+- Responsibilities: Give each responsibility a clear home. Proactively consolidate fragmented responsibilities and separate mixed concerns in the affected code. Base boundaries on reasons to change, not incidental code similarity.
+- Changes: Replace inadequate approaches rather than preserving them with case-specific rules or local patches. Make the structural corrections needed for a coherent solution.
+
+### Review
+
+Review the complete current result against the user's requirements, approved scope, and relevant context.
+
+- Responsibilities: Check that each responsibility has a clear home, fragmented parts of the same responsibility are consolidated, and concerns with different reasons to change are separated.
+- Findings: Explain the review conclusion with supporting evidence and identify any required changes.
+- Completion: Review passes when no required changes remain.
+
+### Testing
+
+Testing is optional. After review, propose a test plan when tests would help verify the result.
+
+- Approval: Write and run only the approved tests.
+- Design: Focus on important requirements and realistic failure cases. Keep tests lean and avoid overly granular checks.
+- Execution: Validate substantial, coherent changes together and reuse established test workflows.
