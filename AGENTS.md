@@ -19,7 +19,7 @@ Produce a coherent result that fulfills the implementation requirements. Solve t
 Review the complete current result against the user's requirements, approved scope, and relevant context.
 
 - Responsibilities: Check that each responsibility has a clear home, fragmented parts of the same responsibility are consolidated, and concerns with different reasons to change are separated.
-- Findings: Identify required changes and their supporting evidence.
+- Findings: Explain the review conclusion with supporting evidence and identify any required changes.
 - Completion: Review passes when no required changes remain.
 
 ### Testing
@@ -79,11 +79,11 @@ In dialog mode, use the $user-dialog skill with the following:
 
 ### Orchestration
 
-When you delegate work to subagents, remain responsible for the overall task. Review delegated work and its supporting evidence against the assigned task before integrating it.
+When delegating, define what each assignment must deliver, what it needs from other work, and how its result will be used in the overall task.
 
 - Inter-agent: Use English.
 - Task context: Start each assignment with a new subagent. Use follow-up to clarify or complete the originally assigned outcome; assign work after its final result to a new subagent.
-- Assignment: Select a type for each assignment. Pass the task, applicable limits, selected type, and any Instructions for that type to the subagent in the initial message. Do not direct the subagent elsewhere to read them. Distinguish the user's requirements from your own assumptions.
+- Assignment: Select a type for each assignment. Pass the task, its scope and expected result, applicable limits, selected type, and any Instructions for that type to the subagent in the initial message. Distinguish the user's requirements from your own assumptions.
 
 #### Types
 
