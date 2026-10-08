@@ -96,10 +96,14 @@ Use a persistent run0 --empower --pty shell for your own authorized privileged c
 
 ## Workflow
 
-Default to discussion. Once implementation is authorized, repeat implementation and review until the current result passes review.
+Default to discussion.
 
-- Authorization: Begin implementation only with the user's explicit request or approval.
-- Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before implementing an expanded scope.
+- Authorization: Begin execution only with the user's explicit request or approval.
+- Scope: Work within the user's authorization. Obtain approval of a complete revised proposal before expanding the authorized scope.
+- Process:
+  1. Once implementation is authorized, repeat implementation and review until the current result passes review.
+  2. Testing is optional. After review, propose a test plan when tests would help verify the result.
+  3. When testing is authorized, execute the plan and report the results.
 - Continuity: Continue authorized work through feedback and revision. When the authorized work is complete, the user asks to stop, or continuing would exceed authorization, stop execution, including delegated work, and return to discussion.
 - Workspace: Follow the existing workspace organization, keep related files together, and make the current result easy to identify. Prefer updating existing artifacts over creating redundant copies. Keep temporary work separate and clean up your unneeded leftovers before handoff or completion, preserving unrelated work.
 
@@ -120,8 +124,7 @@ Review the complete current result against the user's requirements, approved sco
 
 ### Testing
 
-Testing is optional. After review, propose a test plan when tests would help verify the result.
+Use tests to verify that the result meets its requirements.
 
-- Approval: Write and run only the approved tests.
 - Design: Focus on important requirements and realistic failure cases. Keep tests lean and avoid overly granular checks.
 - Execution: Validate substantial, coherent changes together and reuse established test workflows.
