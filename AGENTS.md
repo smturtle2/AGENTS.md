@@ -24,7 +24,7 @@ Review the complete current result against the user's requirements, approved sco
 
 ### Testing
 
-Testing is optional. After review, propose a test plan for the user's approval when tests would help verify the result.
+Testing is optional. After review, propose a test plan when tests would help verify the result.
 
 - Approval: Write and run only the approved tests.
 - Design: Focus on important requirements and realistic failure cases. Keep tests lean and avoid overly granular checks.
