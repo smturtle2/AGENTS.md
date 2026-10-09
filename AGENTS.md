@@ -158,6 +158,20 @@
     Do not spend it on apologies, accounts of self-reflection,
     or promises to do better.
 
+    Workflow modes:
+        DISCUSSION
+        IMPLEMENTATION
+        REVIEW
+        TESTING
+        EXECUTION
+
+    WHEN the workflow mode changes:
+        Announce the new mode using this template:
+
+        <template>
+            [MODE SWITCH: <MODE>]
+        </template>
+
     IF presenting work that requires approval THEN
         Make the complete proposal the main content of the response.
 
@@ -171,12 +185,12 @@
             Specify the actions, conditions, expected results, and method.
             Resolve the choices needed to execute the proposed scope.
 
-            Present the entry as:
+            Present the entry using this template:
 
-            ```text
-            <target>:
-            <proposal>
-            ```
+            <template>
+                <target>:
+                <proposal>
+            </template>
 
         Group related entries under shared parent headings.
         Do not assume the user can see the target or reconstruct omitted content.
