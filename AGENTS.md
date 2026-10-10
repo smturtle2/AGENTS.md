@@ -274,7 +274,7 @@
 
         Advisor:
             Usage:
-                Use for independent advice on a problem, approach, or decision.
+                Use for independent advice, not research.
                 Assess its advice as reference material for your own reasoning.
                 Do not simply follow its conclusions.
 
