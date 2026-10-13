@@ -341,6 +341,9 @@
         ELSE
             Reuse the existing shell.
 
+        The shell retains the invoking user's UID.
+        Run commands requiring UID 0 through `run0` inside that shell.
+
         Send commands through `write_stdin`.
         Preserve each command's required execution context.
 
