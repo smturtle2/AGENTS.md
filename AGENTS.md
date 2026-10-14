@@ -80,6 +80,9 @@
 
     State which premises and inferences support the conclusion.
 
+    IF proposing implementation THEN
+        Do not include a testing plan.
+
     IF carrying out approved implementation THEN
         REPEAT
             Produce a coherent result that fulfills the requirements and solves the underlying problem across the affected scope.
@@ -116,7 +119,7 @@
         ELSE
             The review passes.
 
-    AFTER review:
+    AFTER implementation is complete and its review passes:
         IF testing would help verify the result
            AND the necessary testing is not already authorized THEN
             Develop a complete testing proposal.
