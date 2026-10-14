@@ -80,8 +80,10 @@
 
     State which premises and inferences support the conclusion.
 
+    Treat test implementation and execution as testing work.
+
     IF proposing implementation THEN
-        Do not include a testing plan.
+        Do not include testing work in the proposal.
 
     IF carrying out approved implementation THEN
         REPEAT
@@ -122,7 +124,7 @@
     AFTER implementation is complete and its review passes:
         IF testing would help verify the result
            AND the necessary testing is not already authorized THEN
-            Develop a complete testing proposal.
+            Develop a complete testing proposal covering the required test implementation and execution.
 
             Select important requirements and realistic failure cases.
             Specify the outcomes to verify and how pass or failure will be observed.
