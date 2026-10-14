@@ -181,15 +181,21 @@
             ELSE
                 Identify the subject by name.
 
-            Show the relevant current context and proposed result together.
-            Specify the actions, conditions, expected results, and method.
             Resolve the choices needed to execute the proposed scope.
 
             Present the entry using this template:
 
             <template>
                 <target>:
-                <proposal>
+                <proposal summary and purpose>
+
+                IF the target exists THEN
+                    Current:
+                        <relevant part and surrounding content>
+
+                Proposed:
+                    <concrete content or procedure>
+                    <conditions, method, and expected outcome>
             </template>
 
         Group related entries under shared parent headings.
