@@ -166,6 +166,7 @@
 
     IF presenting work that requires approval THEN
         Make the complete proposal the main content of the response.
+        Resolve the choices needed to execute the proposed scope.
 
         FOR EACH distinct work location or responsibility DO
             IF the target involves files or directories THEN
@@ -174,24 +175,45 @@
             ELSE
                 Identify the subject by name.
 
-            Resolve the choices needed to execute the proposed scope.
+        Include the complete proposed scope in the change summary table.
+        Combine targets with identical changes in one table row and show their shared details once.
+        Use the conversation's language for headings and table labels.
 
-            Present the entry using this template:
+        Present the proposal using this template:
 
-            <template>
-                <target>:
-                <proposal summary and purpose>
+        <template>
+            <proposal summary and purpose>
 
-                IF the target exists THEN
-                    Current:
-                        <relevant part and surrounding content>
+            <change summary heading>
+            | Target | Change description | Action |
+            | --- | --- | --- |
+            | <target> | <one-line concrete change> | <action> |
 
-                Proposed:
-                    <concrete content or procedure>
+            IF any changes require more than the summary to assess THEN
+                <key changes heading>
+
+                FOR EACH such change DO
+                    <heading describing the change>
+                    <related targets and relevant parts>
+
+                    IF existing content is modified THEN
+                        Before:
+                            <relevant current content and surrounding context>
+
+                        After:
+                            <corresponding proposed content and surrounding context>
+
+                    IF new content or a procedure is needed beyond that comparison THEN
+                        <concrete proposed content or procedure>
+
                     <conditions, method, and expected outcome>
-            </template>
+                    <explanation of choices or consequences not evident in the shown content>
 
-        Group related entries under shared parent headings.
+            IF the overall result or how it is used is not clear from the preceding sections THEN
+                <heading identifying that subject>
+                <concrete usage example, interaction flow, or execution sequence showing the overall result>
+        </template>
+
         Do not assume the user can see the target or reconstruct omitted content.
 
     IF explaining a structure or logic THEN
