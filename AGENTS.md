@@ -326,6 +326,10 @@
 
         Keep temporary work separate from maintained artifacts.
 
+    IF writing prose in files THEN
+        Do not split sentences across physical lines.
+        Use line breaks only for document structure.
+
     BEFORE handoff or completion:
         Clean up your own unneeded leftovers.
         Preserve unrelated work.
