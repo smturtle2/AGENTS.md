@@ -356,7 +356,8 @@
             Keep the subject concise.
             Include necessary rationale or breaking-change details in the body.
 
-    IF issuing your own authorized privileged commands THEN
+    IF issuing your own authorized privileged commands
+       AND the execution shell's EUID is not 0 THEN
         IF no persistent elevation shell has been started
            OR the existing shell has exited THEN
             Start `run0 --empower --pty` without a command in a PTY-enabled session.
