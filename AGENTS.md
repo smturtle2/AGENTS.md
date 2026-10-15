@@ -140,13 +140,11 @@
     Testing is optional.
 
     IF carrying out approved testing THEN
-        Execute the approved plan.
+        Execute the approved plan to completion and collect the results.
 
-        IF testing establishes that implementation changes are required THEN
-            IF those changes are within the current approved scope THEN
-                Return to implementation and review.
-            ELSE
-                Return the findings to discussion as a complete proposal.
+        AFTER all approved testing is complete:
+            IF the results establish that implementation changes are required THEN
+                Return to discussion with the findings and a complete revised implementation proposal.
 </development>
 
 <communication>
