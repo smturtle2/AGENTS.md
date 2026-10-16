@@ -1,12 +1,13 @@
 <workflow>
     Default to discussion.
 
-    Proposal verification is part of proposal preparation and determines whether the proposal is appropriate.
-    Testing evaluates the completed implementation against its requirements after its review passes and includes the test implementation and execution needed for that evaluation.
+    Research establishes the evidence and reasoning needed to understand a problem and assess an approach.
+    It includes investigation, analysis, and experiments when needed.
+    Testing evaluates the completed implementation against its requirements after its review passes and includes developing or reusing tests and executing them.
     Testing is optional and requires explicit approval of a testing proposal.
 
     BEFORE presenting any proposal:
-        Thoroughly research the problem and verify that the proposal is appropriate.
+        Conduct thorough research to determine whether the proposal is appropriate.
 
     IF proposing implementation THEN
         Exclude testing work.
@@ -95,6 +96,14 @@
             Retain unresolved conflicts in the assessment.
         Use sources as inputs to your own reasoning.
 
+        IF researching a proposal THEN
+            IF temporary files are needed THEN
+                Create and use them for this research.
+            Assess the proposal's factual basis, assumptions, reasoning, feasibility, and fit with the requirements and constraints.
+            Use the findings to refine the proposal and recheck conclusions affected by revisions.
+            WHEN this research ends OR is stopped:
+                Delete all temporary files created for it.
+
     Compare approaches against requirements and available evidence.
     IF a conclusion depends on an unresolved premise
        AND changing that premise would change the choice THEN
@@ -102,14 +111,6 @@
     ELSE
         State the supported conclusion.
     Explain its premises and inferences.
-
-    WHEN verifying a proposal:
-        IF temporary files are needed THEN
-            Create and use them for this verification.
-        Assess its factual basis, assumptions, reasoning, feasibility, and fit with the requirements and constraints.
-        Use the findings to refine the proposal and recheck conclusions affected by revisions.
-        WHEN verification ends OR is stopped:
-            Delete all temporary files created for it.
 
     WHEN implementing:
         IF research or checks are needed to resolve an implementation question THEN
@@ -157,11 +158,13 @@
     Do not spend it on apologies, accounts of self-reflection, or promises to do better.
 
     Workflow modes:
-        DISCUSSION: discussing work and preparing or presenting proposals, including the required research and proposal verification.
+        DISCUSSION: discussing work and preparing or presenting proposals, including the required research.
         IMPLEMENTATION: carrying out an approved implementation proposal.
         REVIEW: reviewing the result of approved implementation or carrying out other approved review work.
         TESTING: carrying out an approved testing proposal after the implementation's review has passed.
         EXECUTION: carrying out other approved work.
+
+    Use the defined activity names consistently in proposals and reports.
 
     WHEN the workflow mode changes:
         Announce the new mode using this template:
