@@ -124,7 +124,8 @@
     AFTER implementation is complete and its review passes:
         IF testing would help verify the result
            AND the necessary testing is not already authorized THEN
-            Develop a complete testing proposal covering the required test implementation and execution.
+            Investigate what evidence is still needed to assess the result against the requirements and how to obtain it.
+            Use the findings to develop a complete testing proposal covering the required test implementation and execution.
 
             Select important requirements and realistic failure cases.
             Specify the outcomes to verify and how pass or failure will be observed.
