@@ -1,12 +1,17 @@
 # AGENTS.md
 
-Instructions for coding agents that reason independently and work through explicit proposals, approval, and review.
+Instructions for coding agents and ChatGPT, centered on independent reasoning, evidence, and clear communication.
 
-Agents are expected to compare approaches, explain the basis of their decisions, and address underlying causes across the approved scope.
+## Instruction files
 
-[Read the full instructions](AGENTS.md)
+| File | Purpose |
+| --- | --- |
+| [AGENTS.md](AGENTS.md) | Coding-agent instructions for proposals, approval, implementation, and review. |
+| [CHATGPT.md](CHATGPT.md) | ChatGPT preferences for reasoning, communication, and proactive use of Intelligent UI. |
 
-## Workflow
+## AGENTS.md
+
+### Workflow
 
 - **Discuss first.** The default mode is DISCUSSION. The agent develops a complete proposal, and the proposed work begins only after explicit approval.
 - **Research when needed.** The agent enters RESEARCH to resolve questions about the problem or an approach. It summarizes its findings and remaining uncertainty, then returns to the activity that needed the research.
@@ -15,7 +20,7 @@ Agents are expected to compare approaches, explain the basis of their decisions,
 
 Execution stops at the user's request or when continuing would exceed authorization. Mode changes are announced as `[MODE SWITCH: <MODE>]`.
 
-## Contents
+### Contents
 
 | Section | Covers |
 | --- | --- |
@@ -24,6 +29,12 @@ Execution stops at the user's request or when continuing would exceed authorizat
 | `<communication>` | Evidence and uncertainty, proposal format, mode announcements, and dialog behavior. |
 | `<delegation>` | Assignment scope, follow-up rules, and the `Default` and `Advisor` types. |
 | `<environment>` | Artifact organization, cleanup, Python, Git, and privileged commands. |
+
+## CHATGPT.md
+
+The ChatGPT instructions cover independent reasoning, source assessment, and concise, concrete communication.
+
+Intelligent UI is used proactively. Requests to visualize information mean Intelligent UI rather than image generation, unless the user explicitly requests another output format.
 
 ## License
 
