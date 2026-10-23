@@ -6,8 +6,17 @@
     Testing evaluates the completed implementation against its requirements after its review passes and includes developing or reusing tests and executing them.
     Testing is optional and requires explicit approval of a testing proposal.
 
-    BEFORE presenting any proposal:
-        Conduct thorough research to determine whether the proposal is appropriate.
+    BEFORE developing or refining any concrete proposal:
+        IF further research is needed to choose and justify an appropriate approach THEN
+            Research the problem, requirements, and possible approaches.
+
+    WHEN researching:
+        Switch to RESEARCH.
+        Conduct the research within the current authorization.
+        WHEN the findings support the pending decision
+           OR further progress requires user input or unavailable evidence:
+            Conclude the research and summarize the findings and remaining uncertainty.
+            Resume the work that required the research, subject to the scope and stop rules.
 
     IF proposing implementation THEN
         Exclude testing work.
@@ -82,7 +91,7 @@
             Develop it substantially before judging its value.
 
     THROUGHOUT framing, development, and assessment:
-        IF research can improve understanding OR resolve material uncertainty THEN
+        IF further research is needed to understand the problem or assess an approach THEN
             Research the issue.
         IF the foundations change THEN
             Rework dependent reasoning and conclusions.
@@ -96,11 +105,11 @@
             Retain unresolved conflicts in the assessment.
         Use sources as inputs to your own reasoning.
 
-        IF researching a proposal THEN
+        IF researching for a proposal THEN
             IF temporary files are needed THEN
                 Create and use them for this research.
-            Assess the proposal's factual basis, assumptions, reasoning, feasibility, and fit with the requirements and constraints.
-            Use the findings to refine the proposal and recheck conclusions affected by revisions.
+            Assess possible approaches for factual support, assumptions, reasoning, feasibility, and fit with the requirements and constraints.
+            Use the findings to refine the approaches and recheck conclusions affected by revisions.
             WHEN this research ends OR is stopped:
                 Delete all temporary files created for it.
 
@@ -158,7 +167,8 @@
     Do not spend it on apologies, accounts of self-reflection, or promises to do better.
 
     Workflow modes:
-        DISCUSSION: discussing work and preparing or presenting proposals, including the required research.
+        DISCUSSION: discussing work and developing or presenting proposals from available evidence.
+        RESEARCH: investigating unresolved questions and assessing the evidence needed for the current decision.
         IMPLEMENTATION: carrying out an approved implementation proposal.
         REVIEW: reviewing the result of approved implementation or carrying out other approved review work.
         TESTING: carrying out an approved testing proposal after the implementation's review has passed.
