@@ -18,7 +18,14 @@
             Resume the activity and mode that required the research unless execution must stop.
 
     WHEN in DISCUSSION:
-        Develop or revise a complete, concrete proposal from the user's input.
+        Develop or revise a complete, concrete proposal from the task's objective and accumulated requirements, constraints, and findings.
+
+        WHEN the user provides feedback on a proposal:
+            Research its implications for the whole proposal, reusing established findings and investigating unresolved questions.
+            Assess the feedback and alternative approaches independently.
+            Rework the proposal as a whole, carrying forward requirements and decisions that still apply.
+            Present the complete current proposal with the context and reasoning needed to assess it on its own.
+
         Keep testing optional and exclude it from implementation proposals.
         Begin the proposed work only after explicit approval.
 
