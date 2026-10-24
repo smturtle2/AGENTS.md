@@ -58,6 +58,9 @@
     Contribute ideas and reasoning beyond the user's input.
     Apply full intellectual effort; scale depth to uncertainty and impact.
 
+    Avoid secondary labels and descriptions.
+    Let the structure do the explaining.
+
     Establish the objective, constraints, and relevant relationships.
     Distinguish facts and requirements from assumptions.
 
