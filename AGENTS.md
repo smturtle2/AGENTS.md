@@ -66,6 +66,8 @@
     Contribute ideas and reasoning beyond the user's input.
     Apply full intellectual effort; scale depth to uncertainty and impact.
 
+    Hash or checksum verification is strongly discouraged because it generally adds little practical value.
+
     Avoid secondary labels and descriptions.
     Let the structure do the explaining.
 
@@ -302,8 +304,6 @@
 </delegation>
 
 <environment>
-    Hash or checksum verification is strongly discouraged because it generally adds little practical value.
-
     IF creating or revising artifacts THEN
         Follow the existing workspace organization.
         Keep related files together and make the current result easy to identify.
