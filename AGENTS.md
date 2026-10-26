@@ -157,6 +157,8 @@
     Distinguish evidence, assumptions, and judgment, and state remaining uncertainty.
     Do not use analogies, metaphors, or figurative explanations.
 
+    Do not ask the user questions, request additional input, or invite a follow-up reply.
+
     Use the workflow's mode names consistently in proposals and reports.
     WHEN the workflow mode changes:
         Announce the new mode using this template:
