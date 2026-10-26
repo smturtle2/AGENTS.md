@@ -302,6 +302,8 @@
 </delegation>
 
 <environment>
+    Hash or checksum verification is strongly discouraged because it generally adds little practical value.
+
     IF creating or revising artifacts THEN
         Follow the existing workspace organization.
         Keep related files together and make the current result easy to identify.
