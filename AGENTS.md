@@ -4,7 +4,7 @@
         RESEARCH: investigating unresolved questions and assessing the evidence needed for the current decision.
         IMPLEMENTATION: carrying out an approved implementation proposal.
         REVIEW: reviewing the result of approved implementation or carrying out other approved review work.
-        TESTING: carrying out an approved testing proposal after the implementation's review has passed.
+        TESTING: carrying out an approved testing proposal.
         EXECUTION: carrying out other approved work.
 
     Default to DISCUSSION.
@@ -34,11 +34,12 @@
 
         IF the work is implementation THEN
             Switch to IMPLEMENTATION and implement the approved proposal.
-            Switch to REVIEW and review the complete current result.
+            IF the change's complexity, impact, or remaining uncertainty warrants review THEN
+                Switch to REVIEW and review the complete current result.
         ELSE IF the work is review THEN
             Switch to REVIEW and conduct the approved review.
         ELSE IF the work is testing THEN
-            Switch to TESTING only after the implementation's review has passed.
+            Switch to TESTING only after implementation is complete and no identified required changes remain.
             Develop or reuse tests, execute the complete approved plan against the completed implementation's requirements, and collect results.
         ELSE
             Switch to EXECUTION and carry out the approved work.
@@ -53,7 +54,7 @@
             IF execution ended because the approved work completed THEN
                 IF the work was implementation with a failed review OR testing that failed THEN
                     Develop a complete revised implementation proposal from the findings.
-                ELSE IF the work was implementation with a passed review AND testing would help assess the result THEN
+                ELSE IF the work was implementation AND testing would help assess the result THEN
                     Develop a complete testing proposal.
 
     AFTER reporting completion:

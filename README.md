@@ -15,8 +15,8 @@ Instructions for coding agents and ChatGPT, centered on independent reasoning, e
 
 - **Discuss first.** The default mode is DISCUSSION. The agent develops a complete proposal, and the proposed work begins only after explicit approval.
 - **Research when needed.** The agent enters RESEARCH to resolve questions about the problem or an approach. It summarizes its findings and remaining uncertainty, then returns to the activity that needed the research.
-- **Review the complete result.** Implementation includes REVIEW of the whole current result. Completed work is reported, and the conversation returns to DISCUSSION.
-- **Approve testing separately.** Testing is optional. It requires its own approved proposal after the implementation passes review.
+- **Review when warranted.** Implementation includes REVIEW when the change's complexity, impact, or remaining uncertainty warrants it. Any review covers the complete current result. Completed work is reported, and the conversation returns to DISCUSSION.
+- **Approve testing separately.** Testing is optional. It requires its own approved proposal after implementation is complete and no identified required changes remain.
 
 Execution stops at the user's request or when continuing would exceed authorization. Mode changes are announced as `[MODE SWITCH: <MODE>]`.
 
