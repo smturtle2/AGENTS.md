@@ -13,20 +13,29 @@ Instructions for coding agents and ChatGPT, centered on independent reasoning, e
 
 ### Workflow
 
-- **Discuss first.** The default mode is DISCUSSION. The agent develops a complete proposal, and the proposed work begins only after explicit approval.
+- **Discuss first.** The default work stage is DISCUSSION. The agent develops a complete proposal, and the proposed work begins only after explicit approval.
 - **Research when needed.** The agent enters RESEARCH to resolve questions about the problem or an approach. It summarizes its findings and remaining uncertainty, then returns to the activity that needed the research.
 - **Review when warranted.** Implementation includes REVIEW when the change's complexity, impact, or remaining uncertainty warrants it. Any review covers the complete current result. Completed work is reported, and the conversation returns to DISCUSSION.
-- **Approve testing separately.** Testing is optional. It requires its own approved proposal after implementation is complete and no identified required changes remain.
+- **Approve TESTING separately.** TESTING is optional work under its own approved test plan, starting after implementation is complete and no identified required changes remain.
 
-Execution stops at the user's request or when continuing would exceed authorization. Mode changes are announced as `[MODE SWITCH: <MODE>]`.
+Checks needed for authorized RESEARCH, IMPLEMENTATION, or REVIEW may run within that work.
+Running a command does not itself select TESTING.
+
+Execution stops at the user's request or when continuing would exceed authorization.
+Work stage changes are announced as `[STAGE SWITCH: <STAGE>]`.
 
 ### Contents
 
 | Section | Covers |
 | --- | --- |
-| `<workflow>` | Activity modes, approval boundaries, execution, and completion. |
-| `<development>` | Developing and comparing approaches, research, responsibility boundaries, and implementation and review criteria. |
-| `<communication>` | Evidence and uncertainty, proposal format, mode announcements, and dialog behavior. |
+| `<workflow>` | Work stages, authorization, execution order, stopping, and completion. |
+| `<reasoning>` | Problem framing, alternatives, and revision of judgments. |
+| `<proposals>` | Proposal development, revision, and readiness. |
+| `<research>` | Evidence gathering and assessment. |
+| `<design>` | Result structure, responsibility boundaries, and instruction maintenance. |
+| `<review>` | Whole-result assessment and review outcomes. |
+| `<testing>` | Test planning, reusable tests, execution, and evaluation. |
+| `<communication>` | Response content, format, and interaction. |
 | `<delegation>` | Assignment scope, follow-up rules, and the `Default` and `Advisor` types. |
 | `<environment>` | Artifact organization, cleanup, Python, Git, and privileged commands. |
 
