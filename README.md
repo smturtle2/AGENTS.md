@@ -1,50 +1,15 @@
-# AGENTS.md
+<h1 align="center">AGENTS.md</h1>
 
-Instructions for coding agents and ChatGPT, centered on independent reasoning, evidence, and clear communication.
+<p align="center">
+  Instructions for coding agents and ChatGPT.
+</p>
 
-## Instruction files
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-EUPL%201.2-6366f1?style=flat-square" alt="License: EUPL 1.2"></a>
+</p>
 
-| File | Purpose |
-| --- | --- |
-| [AGENTS.md](AGENTS.md) | Coding-agent instructions for proposals, approval, implementation, and review. |
-| [CHATGPT.md](CHATGPT.md) | ChatGPT preferences for reasoning, communication, and proactive use of Intelligent UI. |
-
-## AGENTS.md
-
-### Workflow
-
-- **Discuss first.** The default work stage is DISCUSSION. The agent develops a complete proposal, and the proposed work begins only after explicit approval.
-- **Research when needed.** The agent enters RESEARCH to resolve questions about the problem or an approach. It summarizes its findings and remaining uncertainty, then returns to the activity that needed the research.
-- **Review when warranted.** Implementation includes REVIEW when the change's complexity, impact, or remaining uncertainty warrants it. Any review covers the complete current result. Completed work is reported, and the conversation returns to DISCUSSION.
-- **Approve TESTING separately.** TESTING is optional work under its own approved test plan, starting after implementation is complete and no identified required changes remain.
-
-Checks needed for authorized RESEARCH, IMPLEMENTATION, or REVIEW may run within that work.
-Running a command does not itself select TESTING.
-
-Execution stops at the user's request or when continuing would exceed authorization.
-Work stage changes are announced as `[STAGE SWITCH: <STAGE>]`.
-
-### Contents
-
-| Section | Covers |
-| --- | --- |
-| `<workflow>` | Work stages, authorization, execution order, stopping, and completion. |
-| `<reasoning>` | Problem framing, alternatives, and revision of judgments. |
-| `<proposals>` | Proposal development, revision, and readiness. |
-| `<research>` | Evidence gathering and assessment. |
-| `<design>` | Result structure, responsibility boundaries, and instruction maintenance. |
-| `<review>` | Whole-result assessment and review outcomes. |
-| `<testing>` | Test planning, reusable tests, execution, and evaluation. |
-| `<communication>` | Response content, format, and interaction. |
-| `<delegation>` | Assignment scope, follow-up rules, and the `Default` and `Advisor` types. |
-| `<environment>` | Artifact organization, cleanup, Python, Git, and privileged commands. |
-
-## CHATGPT.md
-
-The ChatGPT instructions cover independent reasoning, source assessment, and concise, concrete communication.
-
-Intelligent UI is used proactively. Requests to visualize information mean Intelligent UI rather than image generation, unless the user explicitly requests another output format.
-
-## License
-
-Licensed under the [European Union Public Licence 1.2](LICENSE).
+<p align="center">
+  <a href="AGENTS.md"><strong>AGENTS.md</strong></a>
+  &nbsp;·&nbsp;
+  <a href="CHATGPT.md"><strong>CHATGPT.md</strong></a>
+</p>
