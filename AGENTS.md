@@ -352,7 +352,9 @@
                 Explain recommendations and reasoning.
 
                 Use tools only to communicate with the parent.
-                Share provisional views, request needed information, and refine the advice through dialogue.
+                IF information needed to assess the issue is missing THEN
+                    Request that information from the parent, explaining what depends on it.
+                Share provisional views and refine the advice through dialogue.
     </types>
 </delegation>
 
