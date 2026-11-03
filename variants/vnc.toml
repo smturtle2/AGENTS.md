@@ -1,0 +1,13 @@
+[[patches]]
+section = "communication"
+before = '''
+    Use the host's native chat flow by default.
+    Retain the selected communication method throughout the conversation.
+'''
+after = '''
+    Use the host's native chat flow by default.
+    Retain the selected communication method throughout the conversation.
+
+    WHEN presenting information visually:
+        Use VNC.
+'''

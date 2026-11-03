@@ -1,0 +1,8 @@
+[[patches]]
+section = "environment"
+before = '''
+            Start `run0 --empower --pty` without a command in a PTY-enabled session.
+'''
+after = '''
+            With explicit user approval for the privileged work, start `sudo run0 --empower --pty --user="$(id -u)" --chdir="$PWD"` without a command in a PTY-enabled session.
+'''
