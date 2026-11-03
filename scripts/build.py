@@ -158,6 +158,15 @@ def render(sections: dict[str, str], address: str) -> str:
     return SETTING.sub(lambda match: address, text)
 
 
+def append_extra(text: str, path: Path | None) -> str:
+    if path is None:
+        return text
+    extra = path.expanduser().read_text(encoding="utf-8").strip("\n")
+    if not extra.strip():
+        return text
+    return text.rstrip("\n") + "\n\n" + extra + "\n"
+
+
 def write_output(path: Path, text: str) -> None:
     destination = path.expanduser()
     resolved = destination.resolve()
@@ -185,6 +194,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--profile", required=True, help="profile name from profiles/<name>.toml")
     parser.add_argument("--address", help=f"override the profile address; built-in default: {DEFAULT_ADDRESS}")
+    parser.add_argument("--extra", type=Path, help="append a private UTF-8 instructions file")
     parser.add_argument("--output", type=Path, help="destination file; omit to write to stdout")
     args = parser.parse_args()
     try:
@@ -193,6 +203,7 @@ def main() -> int:
             address = validate_address(args.address, "--address")
         sections = apply_variants(read_sections(), variants)
         text = render(sections, address)
+        text = append_extra(text, args.extra)
         if args.output is None:
             sys.stdout.buffer.write(text.encode("utf-8"))
         else:
