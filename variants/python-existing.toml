@@ -1,0 +1,8 @@
+[[patches]]
+section = "environment"
+before = '''
+        Use uv to run Python and manage environments.
+'''
+after = '''
+        Use the project's existing Python tooling and environment manager.
+'''

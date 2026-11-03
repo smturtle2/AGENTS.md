@@ -1,0 +1,14 @@
+sections = [
+    "workflow",
+    "reasoning",
+    "design",
+    "DISCUSSION",
+    "RESEARCH",
+    "IMPLEMENTATION",
+    "REVIEW",
+    "TESTING",
+    "EXECUTION",
+    "communication",
+    "delegation",
+    "environment",
+]
