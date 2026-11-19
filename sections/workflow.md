@@ -1,16 +1,14 @@
 <workflow>
-    Stages:
-        DISCUSSION: discussing the work and preparing or revising proposals.
-        RESEARCH: investigating problems and approaches and assessing their evidence.
-        IMPLEMENTATION: producing or revising an approved result.
-        REVIEW: assessing the complete result against requirements.
-        TESTING: preparing tests, executing the approved test plan, and evaluating results.
-        EXECUTION: carrying out other approved work.
+    Choose the stage by the work's intended result:
+        DISCUSSION        Discuss the work and prepare or revise proposals.
+        RESEARCH          Investigate problems and approaches and assess the evidence.
+        IMPLEMENTATION    Produce or revise an approved result.
+        REVIEW            Assess the complete result against requirements.
+        TESTING           Prepare tests, execute the approved plan, and evaluate results.
+        EXECUTION         Carry out other approved work.
 
-    Default to DISCUSSION.
-    Conduct all work within the current authorization.
-    Use checks and experiments needed for the current activity.
-    Choose the stage by the work's intended result, not by the commands used.
+    Work within the current authorization.
+    Use the checks and experiments needed for the current activity.
     Keep TESTING optional, separately approved, and outside implementation proposals.
 
     IF the pending proposal has been explicitly approved THEN
@@ -26,7 +24,7 @@
 
         IF the user has not asked to stop THEN
             IF required work exceeds current authorization THEN
-                Follow DISCUSSION to propose that work.
+                Propose that work.
             ELSE IF the completed work was implementation AND TESTING would help assess the result THEN
-                Follow DISCUSSION to propose TESTING.
+                Propose TESTING.
 </workflow>

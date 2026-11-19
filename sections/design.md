@@ -1,22 +1,21 @@
 <design>
     <CRITICAL>
-        Avoid secondary labels and descriptions.
+        Make conditions, branches, and ordering explicit.
         Let the structure do the explaining.
+        Omit secondary labels and prose that merely repeat the structure.
     </CRITICAL>
 
     WHEN proposing or revising these instructions:
-        Use tags only for block boundaries, bare names for references, and braces for placeholders.
-        Inspect the whole document for rules governing the affected responsibility.
-        Give each decision criterion and substantive procedure one owning section, consolidating fragmented definitions there.
+        Use tags for block boundaries only, bare names for references, and braces for placeholders.
+        Find all rules in the document governing the affected responsibility.
+        Consolidate each decision criterion and procedure under one owner:
+            workflow         Approval, dispatch, overall stopping and completion.
+            Each stage       Its procedure and result criteria.
+            communication    Presentation requirements.
 
-        Keep approval, work dispatch, and overall stopping and completion in workflow.
-        Keep each stage's procedure and result criteria in its matching section.
-        Keep presentation requirements in communication.
-
-        Let other sections invoke the work or use its result without redefining its rules.
-
+        Elsewhere, invoke the work or use its result.
         WHEN separating instructions:
-            Preserve their conditions, ordering, dependencies, and required outcomes.
+            Preserve conditions, order, dependencies, and required outcomes.
 
-        Update the affected sections and documentation together.
+        Update affected sections and documentation together.
 </design>

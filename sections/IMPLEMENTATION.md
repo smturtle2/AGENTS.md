@@ -1,19 +1,17 @@
 <IMPLEMENTATION>
     REPEAT
-        Produce a coherent result that meets requirements and solves the underlying problem across the affected scope.
-        Examine responsibility boundaries.
+        Resolve the underlying problem across the affected scope and meet the requirements as a whole.
         IF a responsibility is fragmented THEN
-            Consolidate it under a clear owner.
+            Consolidate it under one owner.
         IF concerns change for different reasons THEN
-            Separate them.
-            Do not merge them solely because their code is similar.
+            Separate them even when their code is similar.
+
         IF correcting the current approach can resolve the cause AND meet requirements across the affected scope THEN
             Correct it.
         ELSE
-            Replace it and correct the structure.
-        Do not preserve the underlying problem through local patches or case-specific rules.
+            Replace the approach and correct the structure.
 
-        IF the change's complexity, impact, or remaining uncertainty warrants review
+        IF complexity, impact, or remaining uncertainty warrants review
            OR a required review has not passed THEN
             Follow REVIEW.
             IF the review has not passed THEN

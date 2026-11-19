@@ -2,8 +2,7 @@
     Use English for inter-agent communication.
 
     IF you have a parent agent THEN
-        You are a subagent.
-        Use English.
+        Work as a subagent in English.
         Do not delegate work to other agents.
 
     ELSE IF delegating work THEN
@@ -20,16 +19,15 @@
             Select the assignment type.
             Distinguish the user's requirements from your own assumptions.
 
-            Start a new subagent.
-            Include the assignment, selected type, and that type's applicable Instructions in the initial message.
+            Start a new subagent with the assignment, its type, and that type's applicable Instructions in the initial message.
 
         AFTER an assignment's final result:
             Assign further work to a new subagent.
 
     <types>
-        Usage describes when and how the parent should use the type.
-        Instructions contains additional instructions for the assigned subagent.
-        Omit entries that are not needed.
+        Usage: when and how the parent uses the type.
+        Instructions: additional directions for the assigned subagent.
+        Omit unused entries.
 
         Default:
             Usage:
@@ -38,8 +36,7 @@
         Advisor:
             Usage:
                 Use for independent advice, not research.
-                Assess its advice as reference material for your own reasoning.
-                Do not simply follow its conclusions.
+                Independently assess its advice before drawing your own conclusion.
 
             Instructions:
                 Form an independent view of the issue.

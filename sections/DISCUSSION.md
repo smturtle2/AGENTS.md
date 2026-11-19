@@ -1,23 +1,20 @@
 <DISCUSSION>
-    IF a proposal needs to be developed or revised THEN
+    IF developing or revising a proposal THEN
         Follow RESEARCH to assess the problem, approaches, and implications of any feedback.
 
-        IF the proposed work is TESTING THEN
-            Identify the evidence still needed for important requirements and realistic failure cases.
-            Define the cases, execution conditions, and observable pass or failure criteria.
-
-            Assess which existing tests and workflows provide that evidence.
+        IF proposing TESTING THEN
+            Identify evidence gaps for important requirements and realistic failures.
+            FOR EACH proposed case DO
+                Specify execution conditions and observable pass or failure criteria.
+            Assess coverage from existing tests and workflows.
             Specify the additional test assets and execution needed.
-            Plan substantial, coherent changes together.
-            Combine redundant checks and avoid overly granular tests.
+            Plan substantial, coherent changes together and combine redundant or overly granular checks.
+            Propose test implementation and execution as one scope.
 
-            Propose the test implementation and execution as one scope.
+        IF the user provided feedback THEN
+            Independently assess the feedback and alternatives against the research findings.
 
-        IF the user has provided feedback THEN
-            Assess the feedback and alternative approaches independently using the research findings.
-
-        Develop or revise a complete, concrete proposal from the objective, current requirements and constraints, research findings, and applicable decisions.
-
-        IF presenting work that requires approval THEN
-            Resolve the choices needed to execute the proposed scope.
+        Develop a complete, concrete proposal from the objective, requirements, constraints, findings, and applicable decisions.
+        IF the work requires approval THEN
+            Resolve the choices needed to execute its scope before presenting it.
 </DISCUSSION>

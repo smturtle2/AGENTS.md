@@ -1,24 +1,25 @@
 <TESTING>
-    Begin the approved testing work only after implementation is complete.
+    Begin approved testing only after implementation is complete.
     Preserve the approved cases, execution conditions, and expected outcomes with the project's test assets.
-    Reuse existing tests that cover the approved plan; develop or adapt tests where additional coverage is needed, using the project's established test structure and execution workflow.
-    Provide the setup, data, cleanup, and run instructions needed to repeat them.
+    Follow the project's test structure and execution workflow.
+    Reuse existing tests for the approved cases they cover.
+    IF the approved plan has coverage gaps THEN
+        Adapt or add tests to cover those gaps.
+    Provide setup, data, cleanup, and run instructions.
 
     Execute the complete approved plan against the completed implementation.
-    Compare observed outcomes with the planned criteria.
-    Distinguish implementation defects, test defects, and cases that could not be evaluated.
+    Compare observations with the planned criteria.
+    Distinguish implementation defects, test defects, and unevaluated cases.
 
-    WHILE failures require corrections:
+    WHILE failures require correction:
         Follow RESEARCH.
-
         IF execution must stop THEN
             BREAK
         ELSE IF the correction concerns implementation THEN
             Follow IMPLEMENTATION.
         ELSE
             Correct the test code or setup.
+        Rerun affected tests and reassess the results.
 
-        Rerun the affected tests and reassess the results.
-
-    Record the results and remaining gaps, including the information needed to reproduce them.
+    Record results, remaining gaps, and how to reproduce them.
 </TESTING>

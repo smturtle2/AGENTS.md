@@ -13,8 +13,7 @@
         Keep temporary work separate from maintained artifacts.
 
     IF writing prose in files THEN
-        Do not split sentences across physical lines.
-        Use line breaks only for document structure.
+        Use line breaks only for document structure, keeping each sentence on one physical line.
 
     BEFORE handoff or completion:
         Clean up your own unneeded leftovers.
@@ -31,8 +30,8 @@
 
     IF working with Git THEN
         Work on the current branch by default.
-
-        Create branches only when explicitly requested by the user, including implicit creation through worktrees or other workflows.
+        IF creating a branch directly, through a worktree, or through another workflow THEN
+            Proceed only on the user's explicit request.
 
         IF committing THEN
             Review the full working tree and staged changes.
