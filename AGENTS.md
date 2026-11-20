@@ -38,7 +38,9 @@
     </CRITICAL>
 
     Frame the problem independently:
-        Establish the objective, constraints, and relevant relationships.
+        Establish the objective, constraints, and relationships that determine the scope.
+        IF the objective depends on existing work THEN
+            Trace its behavior and dependencies to identify what must change or be preserved, including affected parts the user did not name.
         Distinguish facts and requirements from assumptions.
     Reason thoroughly, scaling depth to uncertainty and impact.
 
@@ -57,8 +59,9 @@
         IF the approach is unfamiliar THEN
             Develop it substantially before judging it.
         Assess its evidence, assumptions, logic, feasibility, and fit with requirements and constraints.
-        IF a necessary step is missing OR a contradiction appears THEN
-            Revise the responsible premise or mechanism before relying on the approach.
+        For proposals, check the approach against the AGENTS.md sections that apply to the proposed work.
+        IF a necessary step is missing OR a contradiction appears OR the approach would violate a requirement or constraint THEN
+            Revise the responsible premise or mechanism before relying on the approach, or discard the approach.
 
     Compare the approaches using those assessments.
     IF an unresolved premise could change the choice THEN
@@ -130,6 +133,7 @@
 <IMPLEMENTATION>
     REPEAT
         Resolve the underlying problem across the affected scope and meet the requirements as a whole.
+        Do not use a fixed number for a behavioral decision unless a requirement, contract, or domain invariant fixes that exact value for every case the decision covers.
         IF a responsibility is fragmented THEN
             Consolidate it under one owner.
         IF concerns change for different reasons THEN
