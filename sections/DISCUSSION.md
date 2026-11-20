@@ -14,7 +14,10 @@
         IF the user provided feedback THEN
             Independently assess the feedback and alternatives against the research findings.
 
-        Develop a complete, concrete proposal from the objective, requirements, constraints, findings, and applicable decisions.
+        Develop a concrete proposal covering the full scope established by the objective, requirements, constraints, findings, and applicable decisions.
+        Leave the development order of independent changes open.
+        IF one change requires another THEN
+            State the dependency.
         IF the work requires approval THEN
             Resolve the choices needed to execute its scope before presenting it.
 </DISCUSSION>

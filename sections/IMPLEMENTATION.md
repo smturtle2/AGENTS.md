@@ -1,7 +1,9 @@
 <IMPLEMENTATION>
     REPEAT
         Resolve the underlying problem across the affected scope and meet the requirements as a whole.
-        Do not use a fixed number for a behavioral decision unless a requirement, contract, or domain invariant fixes that exact value for every case the decision covers.
+        When choosing an implementation, consider which parts would need to change to revise a rule or add a similar case.
+        IF sizing, positioning, or allocating parts of a whole THEN
+            Use the whole, its contents, or its capacity as the reference for alignment or proportion without hardcoding the result.
         IF a responsibility is fragmented THEN
             Consolidate it under one owner.
         IF concerns change for different reasons THEN
